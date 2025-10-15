@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cuisine & Beverage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Heavy Kitchen</h1>
+      <nav class="nav">
+        <a href="#shop">Shop</a>
+        <a href="#order">Order</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-text">
+        <h2>An com ngon nhe cac ban</h2>
+        <p>Kham pha am thuc sieu ngon, khong lo tang can</p>
+        <div class="actions">
+          <button class="btn btn-outline" data-filter="cuisine">Cuisine</button>
+          <button class="btn btn-outline" data-filter="beverage">Beverages</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="cuisine" class="grid">
+      <article class="card" data-category="cuisine">
+        <img src="" alt="Pho bo">
+        <div class="card-body">
+          <h3>Vietnamese soup with beef</h3>
+          <p>A traditional Vietnamese noodle soup made with rich beef broth, tender slices of beef, and fresh herbs</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="cuisine">
+        <img src="" alt="Banh canh tom cua">
+        <div class="card-body">
+          <h3>Vietnamese shrimp and crab udon</h3>
+          <p>In thick pork slurry soup broth. Golden savory goodness served with chewy noodle</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="cuisine">
+        <img src="" alt="Bun mong gio">
+        <div class="card-body">
+          <h3>Vietnamese vermicelli noodles with pork trotters</h3>
+          <p>Sanh is a traditional Vietnamese dish made with rice vermicelli and tender pork trotters in a rich, flavorful broth</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="cuisine">
+        <img src="" alt="Banh cuon">
+        <div class="card-body">
+          <h3>Vietnamese steamed rice rolls</h3>
+          <p>Vietnamese dish made of thin steamed rice sheets filled with minced pork and mushrooms, served with fish sauce</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="cuisine">
+        <img src="" alt="Bun dau">
+        <div class="card-body">
+          <h3>Vermicelli with fried tofu and shrimp paste</h3>
+          <p>A traditional Vietnamese noodle soup made with rich beef broth, tender slices of beef, and fresh herbs</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="cuisine">
+        <img src="" alt="Pho bo">
+        <div class="card-body">
+          <h3>Vietnamese soup with beef </h3>
+          <p>A traditional Vietnamese noodle soup made with rich beef broth, tender slices of beef, and fresh herbs</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="beverage" class="grid">
+      <article class="card" data-category="beverage">
+        <img src="" alt="Ca phe sua">
+        <div class="card-body">
+          <h3>Vietnamese milk coffee</h3>
+          <p>Rich brewed coffee mixed with sweetened condensed milk, served over ice.</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="beverage">
+        <img src="" alt="Matcha latte">
+        <div class="card-body">
+          <h3>Matcha Latte</h3>
+          <p>Premium Japanese matcha blended with fresh milk, served hot or iced.</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="beverage">
+        <img src="" alt="Mocha Latte">
+        <div class="card-body">
+          <h3>Mocha Latte</h3>
+          <p>A comforting blend of rich espresso, velvety steamed milk, and smooth chocolate syrup.</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="beverage">
+        <img src="" alt="Americano">
+        <div class="card-body">
+          <h3>Americano </h3>
+          <p>A bold and smooth blend of espresso and hot water. </p>
+        </div>
+      </article>
+
+      <article class="card" data-category="beverage">
+        <img src="" alt="Tra dao">
+        <div class="card-body">
+          <h3>Peach Tea</h3>
+          <p>A refreshing black tea infused with sweet peach flavor.</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="beverage">
+        <img src="" alt="Tra chanh">
+        <div class="card-body">
+          <h3>Lemon Tea</h3>
+          <p>A refreshing blend of black tea and fresh lemon.</p>
+        </div>
+      </article>
+    </section>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Cuisine & Beverage. Crafted with taste.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
