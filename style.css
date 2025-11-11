@@ -122,6 +122,28 @@ nav .nav-btn.active::after {
     text-align: center;
 }
 
+.offer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Offer items logos */
+.offer-logo {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    background: #fafafa;
+}
+
+.offer-title {
+    font-weight: 700;
+    color: #333;
+}
+
 .app-links a {
     color: #ff5722;
     text-decoration: none;
