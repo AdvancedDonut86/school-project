@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #faf4ed;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #faf4ed;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.location-dropdown {
+    margin-right: 20px;
+}
+
+.login-btn {
+    background: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.search-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: url('background.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+}
+
+.search-section input {
+    width: 50%;
+    padding: 10px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.filters button {
+    background: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Navigatuor button */
+nav .nav-btn {
+    background: transparent;
+    border: none;
+    color: #333;
+    padding: 8px 10px;
+    cursor: pointer;
+    position: relative;
+    font-weight: 600;
+}
+
+nav .nav-btn::after {
+    content: '';
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    bottom: -6px;
+    height: 2px;
+    background: #ff5722;
+    opacity: 0;
+}
+
+nav .nav-btn:hover::after {
+    opacity: 1;
+    animation: nav-blink 0.7s steps(2, end) infinite;
+}
+
+nav .nav-btn.active::after {
+    opacity: 1;
+    animation: none;
+}
+.no-results {
+    margin-top: 12px;
+    color: #777;
+    font-style: italic;
+}
+
+.offers-section {
+    padding: 20px;
+}
+
+.offers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.offer-item {
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.app-links a {
+    color: #ff5722;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* background image */
+body {
+  background-image: url('https://images2.alphacoders.com/947/thumb-1920-947089.jpg');
+  background-repeat: no-repeat;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.search-section {
+    width: 40%;
+    color: #fff;
+}
+
+/* Offers section */
+.offers-section {
+    width: 55%;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.offers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.offer-item {
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}

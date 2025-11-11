@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">idk this res</div>
+        <nav>
+            <ul>
+            <li><button class="nav-btn" data-filter="food">Do an</button></li>
+                <li><button class="nav-btn" data-filter="drinks">Do uong</button></li>
+                <li><button class="nav-btn" data-filter="supermarket">Cho doi</button></li>
+                <li><button class="nav-btn" data-filter="pet">Pet</button></li>
+                <li><button class="nav-btn" data-filter="medicine">Medicine</button></li>
+            </ul>
+        </nav>
+        <a class="login-btn" href="login/index.html">Login</a>
+    </header>
+
+    <section class="main-content">
+        <div class="search-section">
+            <h1>Goi do an di anh</h1>
+            <p>Co den hon 3.10^6 quan an o Tho du Ha Noi. Mo cua tu 00:0:00-23:59:59</p>
+            <input type="text" placeholder="Tim dia diem, mon an...">
+            <div class="filters">
+                <button>Tat ca</button>
+                <button>Do an</button>
+                <button>Do uong</button>
+                <button>Banh kem</button>
+                <button>Trang mieng</button>
+                <button>Nau luong</button>
+                <button>Sushi</button>
+                <button>Mi xao</button>
+            </div>
+        </div>
+
+        <div class="offers-section">
+            <h2>Offers</h2>
+            <div id="offersGrid" class="offers-grid">
+                <div class="offer-item" data-category="food">KFC</div>
+                <div class="offer-item" data-category="food">Letteria</div>
+                <div class="offer-item" data-category="food">Jollibee</div>
+                <div class="offer-item" data-category="food">Popeyes</div>
+                <div class="offer-item" data-category="supermarket">Local Market</div>
+                <div class="offer-item" data-category="supermarket">FreshMart</div>
+            </div>
+            <div id="noResults" class="no-results" style="display:none">No offers found for this category.</div>
+        </div>
+    </section>
+
+    <script src="mainpage-script.js"></script>
+</body>
+</html>
