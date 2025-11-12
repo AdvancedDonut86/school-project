@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC</title>
+    <link rel="stylesheet" href="kfc-style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html" aria-label="KFC Home">
+                    <img src="https://images.seeklogo.com/logo-png/17/1/kfc-logo-png_seeklogo-176326.png" alt="KFC Logo" loading="lazy" onerror="this.onerror=null;this.src='../assets/kfc.svg'">
+                </a>
+            </div>
+            <nav class="header-nav">
+                <button class="nav-link" data-section="menu">Menu</button>
+                <button class="nav-link" data-section="reviews">Đánh giá</button>
+            </nav>
+        </div>
+    </header>
+    <section class="restaurant-hero">
+        <div class="hero-content">
+            <div class="restaurant-image">
+                <img src="https://images.unsplash.com/photo-1626081927389-6cd097cdc6ec?w=600" alt="KFC Restaurant" loading="lazy">
+            </div>
+            <div class="restaurant-info">
+                <h1>KFC</h1>
+                <div class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">360 đánh giá </span>
+                </div>
+                <div class="delivery-info">
+                    <span class="fee">Phí ship: <strong>$1000</strong></span>
+                    <span class="time">Thời gian: <strong>8-10 tieng</strong></span>
+                </div>
+                <p class="description">Thuc ann nhanh</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="menu-section">
+        <div class="section-header">
+            <h2>Menu</h2>
+            <div class="search-menu">
+                <input type="text" id="menuSearch" placeholder="Tìm kiếm..." aria-label="Search menu items">
+            </div>
+        </div>
+
+        <div class="menu-categories">
+            <button class="category-btn active" data-category="all">Tất cả</button>
+            <button class="category-btn" data-category="combo">Combo</button>
+            <button class="category-btn" data-category="chicken">Gà rán</button>
+            <button class="category-btn" data-category="sides">Paracetamol</button>
+            <button class="category-btn" data-category="drinks">Đồ uống</button>
+            <button class="category-btn" data-category="dessert">Tráng miệng</button>
+        </div>
+
+        <div id="menuGrid" class="menu-grid">
+            <!-- Combo section -->
+            <div class="menu-item" data-category="combo">
+                <div class="item-image">
+                    <img src="https://images.unsplash.com/photo-1585238341710-4b4e6f7b8369?w=300" alt="Combo 1" loading="lazy">
+                    <span class="badge">Phổ biến</span>
+                </div>
+                <div class="item-info">
+                    <h3>Combo 2 Miếng Gà + Cơm/Khoai</h3>
+                    <p class="description">2 miếng gà rán giòn + cơm trắng hoặc khoai</p>
+                    <div class="item-footer">
+                        <span class="price">$1200</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="combo">
+                <div class="item-image">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561551?w=300" alt="Combo 3" loading="lazy">
+                    <span class="badge">Khuyến mãi</span>
+                </div>
+                <div class="item-info">
+                    <h3>Combo 3 Miếng Gà + Kèm</h3>
+                    <p class="description">3 miếng gà rán + khoai tây chiên + nước</p>
+                    <div class="item-footer">
+                        <span class="price">₫129,000</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="combo">
+                <div class="item-image">
+                    <img src="https://images.unsplash.com/photo-1608840042357-0cbe47c3e127?w=300" alt="Family Combo" loading="lazy">
+                </div>
+                <div class="item-info">
+                    <h3>Combo Gia Đình (5 Người)</h3>
+                    <p class="description">5 miếng gà rán + 2 khoai + 2 nước + salad</p>
+                    <div class="item-footer">
+                        <span class="price">₫249,000</span>
+ 
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chicken section -->
+            <div class="menu-item" data-category="chicken">
+                <div class="item-image">
+                    <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=300" alt="Chicken Piece" loading="lazy">
+                </div>
+                <div class="item-info">
+                    <h3>Gà Rán (1 Miếng)</h3>
+                    <p class="description">Miếng gà rán giòn ngoài, mềm trong</p>
+                    <div class="item-footer">
+                        <span class="price">₫35,000</span>
+ 
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="chicken">
+                <div class="item-image">
+                    <img src="https://images.unsplash.com/photo-1562547256-a4c75a6e6a41?w=300" alt="Wings" loading="lazy">
+                </div>
+                <div class="item-info">
+                    <h3>Cánh Gà Rán</h3>
+                    <p class="description">Cánh gà nướng giòn, vị cay vừa phải</p>
+                    <div class="item-footer">
+                        <span class="price">₫45,000</span>
+ 
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="chicken">
+                <div class="item-image">
+                    <img src="https://images.unsplash.com/photo-1605521539051-3f1dc6d1b724?w=300" alt="Whole Chicken" loading="lazy">
+                </div>
+                <div class="item-info">
+                    <h3>Gà Nguyên Chỉnh (Gia Đình)</h3>
+                    <p class="description">Gà rán nguyên chỉnh, phục vụ 3-4 người</p>
+                    <div class="item-footer">
+                        <span class="price">₫199,000</span>
+ 
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sides section -->
+            <div class="menu-item" data-category="sides">
+                <div class="item-image">
+                    <img src="https://images.unsplash.com/photo-1584622614875-2953ed17f0a7?w=300" alt="Fries" loading="lazy">
+                </div>
+                <div class="item-info">
+                    <h3>Khoai Tây Chiên</h3>
+                    <p class="description">Khoai tây chiên giòn vàng</p>
+                    <div class="item-footer">
+                        <span class="price">₫25,000</span>
+ 
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="sides">
+                <div class="item-image">
+                    <img src="https://images.unsplash.com/photo-1595521624049-55fd092a1f9d?w=300" alt="Coleslaw" loading="lazy">
+                </div>
+                <div class="item-info">
+                    <h3>Salad Bắp Cải</h3>
+                    <p class="description">Salad bắp cải tươi mát với sốt đặc biệt</p>
+                    <div class="item-footer">
+                        <span class="price">₫35,000</span>
+ 
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="sides">
+                <div class="item-image">
+                    <img src="https://images.unsplash.com/photo-1585518419758-ee9ab29f5525?w=300" alt="Rice" loading="lazy">
+                </div>
+                <div class="item-info">
+                    <h3>Cơm Trắng / Cơm Chiên</h3>
+                    <p class="description">Cơm trắng hoặc cơm chiên tôm</p>
+                    <div class="item-footer">
+                        <span class="price">₫20,000</span>
+ 
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drinks section -->
+            <div class="menu-item" data-category="drinks">
+                <div class="item-image">
+                    <img src="https://images.unsplash.com/photo-1570020176750-92f903b58355?w=300" alt="Cola" loading="lazy">
+                </div>
+                <div class="item-info">
+                    <h3>Coca Cola (Lạnh)</h3>
+                    <p class="description">Nước ngọt Coca Cola lạnh</p>
+                    <div class="item-footer">
+                        <span class="price">₫15,000</span>
+ 
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="drinks">
+                <div class="item-image">
+                    <img src="https://images.unsplash.com/photo-1600788148061-cd5204d0c59b?w=300" alt="Lemonade" loading="lazy">
+                </div>
+                <div class="item-info">
+                    <h3>Nước Chanh Tươi</h3>
+                    <p class="description">Nước chanh tươi mát, vị chuẩn</p>
+                    <div class="item-footer">
+                        <span class="price">₫25,000</span>
+ 
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="drinks">
+                <div class="item-image">
+                    <img src="https://images.unsplash.com/photo-1599599810694-b5ac4dd4c4a9?w=300" alt="Ice Tea" loading="lazy">
+                </div>
+                <div class="item-info">
+                    <h3>Trà Đá Lạnh</h3>
+                    <p class="description">Trà đá tươi mát thơm ngon</p>
+                    <div class="item-footer">
+                        <span class="price">₫20,000</span>
+ 
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dessert section -->
+            <div class="menu-item" data-category="dessert">
+                <div class="item-image">
+                    <img src="https://images.unsplash.com/photo-1576182409830-425b1121eaa1?w=300" alt="Ice Cream" loading="lazy">
+                </div>
+                <div class="item-info">
+                    <h3>Kem Vani</h3>
+                    <p class="description">Kem vani mịn mịn, mát lạnh</p>
+                    <div class="item-footer">
+                        <span class="price">₫30,000</span>
+ 
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="dessert">
+                <div class="item-image">
+                    <img src="https://images.unsplash.com/photo-1585081919806-2a8a48b7ecd1?w=300" alt="Pie" loading="lazy">
+                </div>
+                <div class="item-info">
+                    <h3>Bánh Apple Pie</h3>
+                    <p class="description">Bánh táo giòn ngoài, nóng trong</p>
+                    <div class="item-footer">
+                        <span class="price">₫25,000</span>
+ 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cart-section">
+        <h2>Giỏ Hàng</h2>
+        <div id="cartContainer" class="cart-container">
+            <p class="empty-cart">Chưa có món ăn nào trong giỏ</p>
+        </div>
+        <div class="cart-summary">
+            <div class="summary-row">
+                <span>Tổng tiền:</span>
+                <span id="totalPrice">₫0</span>
+            </div>
+            <div class="summary-row">
+                <span>Phí ship:</span>
+                <span>$1000</span>
+            </div>
+            <div class="summary-row total">
+                <span>Thành tiền:</span>
+                <span id="finalPrice"></span>
+            </div>
+            <button class="checkout-btn">Đặt Hàng Ngay</button>
+        </div>
+    </section>
+    <script src="kfc-script.js"></script>
+</body>
+</html>
