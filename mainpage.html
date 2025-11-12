@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <div class="logo">idk this res</div>
+        <div class="logo"></div>
         <nav>
             <ul>
             <li><button class="nav-btn" data-filter="food">Do an</button></li>
@@ -25,7 +25,9 @@
         <div class="search-section">
             <h1>Goi do an di anh</h1>
             <p>Co den hon 3.10^6 quan an o Tho du Ha Noi. Mo cua tu 00:0:00-23:59:59</p>
-            <input type="text" placeholder="Tim dia diem, mon an...">
+            <div class="search-input">
+                <input id="searchInput" type="text" placeholder="Tim dia diem, mon an..." aria-label="Search locations or dishes">
+            </div>
             <div class="filters">
                 <button>Tat ca</button>
                 <button>Do an</button>
@@ -40,37 +42,151 @@
 
         <div class="offers-section">
             <h2>Offers</h2>
-                    <div id="offersGrid" class="offers-grid">
-                        <div class="offer-item" data-category="food">
-                            <img class="offer-logo" src="https://via.placeholder.com/120x80?text=KFC" alt="KFC logo">
-                            <div class="offer-title">KFC</div>
-                        </div>
+            <div id="offersGrid" class="offers-grid">
+                <!-- Food -->
+                <div class="offer-item" data-category="food">
+                    <a class="offer-link" href="kfc/index.html" aria-label="Open KFC page">
+                      <figure>
+                          <img class="brand small-logo" src="https://images.seeklogo.com/logo-png/17/1/kfc-logo-png_seeklogo-176326.png" alt="KFC" loading="lazy" onerror="this.onerror=null;this.src='assets/kfc.svg'">
+                          <figcaption>KFC</figcaption>
+                      </figure>
+                    </a>
+                </div>
+                <div class="offer-item" data-category="food">
+                    <figure>
+                    <img class="brand" src="https://statics.vincom.com.vn/http/vincom-ho/thuong_hieu/anh_logo/Lotteria.png/f2968ec2f86f9558a426661ec73b9e21.webp" alt="Lotteria" loading="lazy" onerror="this.onerror=null;this.src='assets/letteria.svg'">
+                        <figcaption>Lotteria</figcaption>
+                    </figure>
+                </div>
+                <div class="offer-item" data-category="food">
+                    <figure>
+                        <img class="brand" src="https://upload.wikimedia.org/wikipedia/en/8/84/Jollibee_2011_logo.svg" alt="Jollibee" loading="lazy" onerror="this.onerror=null;this.src='assets/jollibee.svg'">
+                        <figcaption>Jollibee</figcaption>
+                    </figure>
+                </div>
+                <div class="offer-item" data-category="food">
+                    <figure>
+                        <img class="brand" src="https://images.squarespace-cdn.com/content/v1/53a47e51e4b0e78ae9ed2e97/be0aea01-84cc-4b89-a5e8-314ed394dc3c/Popeyes+logo.jpg" alt="Popeyes" loading="lazy" onerror="this.onerror=null;this.src='assets/popeyes.svg'">
+                        <figcaption>Popeyes</figcaption>
+                    </figure>
+                </div>
 
-                        <div class="offer-item" data-category="food">
-                            <img class="offer-logo" src="https://via.placeholder.com/120x80?text=Letteria" alt="Letteria logo">
-                            <div class="offer-title">Letteria</div>
-                        </div>
+                <!-- Supermarket -->
+                <div class="offer-item" data-category="supermarket">
+                    <figure>
+                        <img src="https://cdn.sanity.io/images/nxpteyfv/goguides/27aa3165c0bd9e4b6310ef06d7af66a4e641a7f3-1600x1066.jpg" alt="Local Market" loading="lazy" onerror="this.onerror=null;this.src='assets/local-market.svg'">
+                        <figcaption>Local Market</figcaption>
+                    </figure>
+                </div>
+                <div class="offer-item" data-category="supermarket">
+                    <figure>
+                        <img src="https://mms.img.susercontent.com/vn-11134513-7ras8-m5263tkuhxsn67@resize_ss1242x600!@crop_w1242_h600_cT" alt="FreshMart" loading="lazy" onerror="this.onerror=null;this.src='assets/freshmart.svg'">
+                        <figcaption>FreshMart</figcaption>
+                    </figure>
+                </div>
 
-                        <div class="offer-item" data-category="food">
-                            <img class="offer-logo" src="https://via.placeholder.com/120x80?text=Jollibee" alt="Jollibee logo">
-                            <div class="offer-title">Jollibee</div>
-                        </div>
+                <!-- Drinks -->
+                <div class="offer-item" data-category="drinks">
+                    <figure>
+                        <img class="brand" src="https://www.highlandscoffee.com.vn/vnt_upload/product/07_2023/FREEZE-TRA-XANH-5.1.png" alt="Highlands Coffee" loading="lazy" onerror="this.onerror=null;this.src='assets/cocacola.svg'">
+                        <figcaption>Highlands Coffee</figcaption>
+                    </figure>
+                </div>
+                <div class="offer-item" data-category="drinks">
+                    <figure>
+                        <img class="brand" src="https://aeonmall-hadong.com.vn/wp-content/uploads/2021/07/z4283549052237_06fc6f629076ddffb60a6b072ae42c5d-750x468.jpg" alt="Tocotoco" loading="lazy" onerror="this.onerror=null;this.src='assets/pepsi.svg'">
+                        <figcaption>Tocotoco</figcaption>
+                    </figure>
+                </div>
+                <div class="offer-item" data-category="drinks">
+                    <figure>
+                        <img class="brand" src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1185px-Starbucks_Corporation_Logo_2011.svg.png" alt="Starbucks" loading="lazy" onerror="this.onerror=null;this.src='assets/nuoc-loc.svg'">
+                        <figcaption>Starbucks</figcaption>
+                    </figure>
+                </div>
+                <div class="offer-item" data-category="drinks">
+                    <figure>
+                        <img src="https://thodia.mservice.io/display?url=https://img.mservice.com.vn/common/u/2e02fb5fe4f64fb55bc713540643c6f8eae702d101cea8c59afc49cfc505fc37/0f2b2362-6f90-4b17-9c66-4e8ce6d79933humvy4nh.jpeg&fmt=jpg&w=300&op=resize" alt="Phúc Long" loading="lazy" onerror="this.onerror=null;this.src='assets/matcha-latte.svg'">
+                        <figcaption>Phúc Long</figcaption>
+                    </figure>
+                </div>
+                <div class="offer-item" data-category="drinks">
+                    <figure>
+                        <img src="https://yihetang.com.vn/public/upload/405316144_371363952086694_2188235862794598640_n.jpg" alt="Yihetang" loading="lazy" onerror="this.onerror=null;this.src='assets/tra-sua-tran-chau.svg'">
+                        <figcaption>Yihetang</figcaption>
+                    </figure>
+                </div>
 
-                        <div class="offer-item" data-category="food">
-                            <img class="offer-logo" src="https://via.placeholder.com/120x80?text=Popeyes" alt="Popeyes logo">
-                            <div class="offer-title">Popeyes</div>
-                        </div>
+                <!-- Pet -->
+                <div class="offer-item" data-category="pet">
+                    <figure>
+                        <img src="https://lolipet.net/wp-content/uploads/shiba-inu-1.jpg" alt="Chó" loading="lazy" onerror="this.onerror=null;this.src='assets/cho.svg'">
+                        <figcaption>Chó</figcaption>
+                    </figure>
+                </div>
+                <div class="offer-item" data-category="pet">
+                    <figure>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Golden_tabby_and_white_kitten_n01.jpg/1200px-Golden_tabby_and_white_kitten_n01.jpg" alt="Mèo" loading="lazy" onerror="this.onerror=null;this.src='assets/meo.svg'">
+                        <figcaption>Mèo</figcaption>
+                    </figure>
+                </div>
+                <div class="offer-item" data-category="pet">
+                    <figure>
+                        <img src="https://cdn2.fptshop.com.vn/unsafe/1920x0/filters:format(webp):quality(75)/2024_1_20_638413550421954857_cach-luoc-ga-gia-nhanh-mem-va-meo-nau-ga-giu-duoc-huong-vi-da-vang-ong-khong-bi-rach.jpg" alt="Gà" loading="lazy" onerror="this.onerror=null;this.src='assets/ga.svg'">
+                        <figcaption>Gà</figcaption>
+                    </figure>
+                </div>
+                <div class="offer-item" data-category="pet">
+                    <figure>
+                        <img src="https://cdn2.fptshop.com.vn/unsafe/1920x0/filters:format(webp):quality(75)/2023_10_11_638326619510062878_vit-nau-gi-ngon.jpg" alt="Vịt" loading="lazy" onerror="this.onerror=null;this.src='assets/vit.svg'">
+                        <figcaption>Vịt</figcaption>
+                    </figure>
+                </div>
+                <div class="offer-item" data-category="pet">
+                    <figure>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Cairina_moschata%2C_CUB.jpg/1200px-Cairina_moschata%2C_CUB.jpg" alt="Ngan" loading="lazy" onerror="this.onerror=null;this.src='assets/ngan.svg'">
+                        <figcaption>Ngan</figcaption>
+                    </figure>
+                </div>
+                <div class="offer-item" data-category="pet">
+                    <figure>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Anser_anser_2_%28Piotr_Kuczynski%29.jpg/1200px-Anser_anser_2_%28Piotr_Kuczynski%29.jpg" alt="Ngỗng" loading="lazy" onerror="this.onerror=null;this.src='assets/ngong.svg'">
+                        <figcaption>Ngỗng</figcaption>
+                    </figure>
+                </div>
 
-                        <div class="offer-item" data-category="supermarket">
-                            <img class="offer-logo" src="https://via.placeholder.com/120x80?text=Local+Market" alt="Local Market logo">
-                            <div class="offer-title">Local Market</div>
-                        </div>
-
-                        <div class="offer-item" data-category="supermarket">
-                            <img class="offer-logo" src="https://via.placeholder.com/120x80?text=FreshMart" alt="FreshMart logo">
-                            <div class="offer-title">FreshMart</div>
-                        </div>
-                    </div>
+                <!-- Medicine -->
+                <div class="offer-item" data-category="medicine">
+                    <figure>
+                        <img src="https://www.imexpharm.com/Data/Sites/1/Product/8809/Paracetamol-IMEX-500mg-hop-100v.png" alt="Paracetamol" loading="lazy" onerror="this.onerror=null;this.src='assets/paracetamol.svg'">
+                        <figcaption>Paracetamol</figcaption>
+                    </figure>
+                </div>
+                <div class="offer-item" data-category="medicine">
+                    <figure>
+                        <img src="https://cdnv2.tgdd.vn/mwg-static/ankhang/Products/Images/10023/130824/alphachymotrypsine-choay-fix-thumb-638683483651308564-600x600.jpg" alt="Alpha Chymotrypsine" loading="lazy" onerror="this.onerror=null;this.src='assets/alpha-chymotrypsine.svg'">
+                        <figcaption>Alpha Chymotrypsine</figcaption>
+                    </figure>
+                </div>
+                <div class="offer-item" data-category="medicine">
+                    <figure>
+                        <img src="https://cdn.upharma.vn/unsafe/828x0/filters:quality(90)/san-pham/8463.png" alt="Panadol" loading="lazy" onerror="this.onerror=null;this.src='assets/panadol.svg'">
+                        <figcaption>Panadol</figcaption>
+                    </figure>
+                </div>
+                <div class="offer-item" data-category="medicine">
+                    <figure>
+                        <img src="https://www.vinmec.com/static/uploads/20201115_030043_256906_Methylprednisolone_max_1800x1800_jpg_a208ca38ad.jpg" alt="Methylprednisolon" loading="lazy" onerror="this.onerror=null;this.src='assets/methylprednisolon.svg'">
+                        <figcaption>Methylprednisolon</figcaption>
+                    </figure>
+                </div>
+                <div class="offer-item" data-category="medicine">
+                    <figure>
+                        <img src="https://cdn.thegioididong.com/Products/Images/10254/129050/vien-uong-rocket-1h-6-vien-2-1.jpg" alt="Rocket 1h" loading="lazy" onerror="this.onerror=null;this.src='assets/rocket-1h.svg'">
+                        <figcaption>Rocket 1h</figcaption>
+                    </figure>
+                </div>
+            </div>
             <div id="noResults" class="no-results" style="display:none">No offers found for this category.</div>
         </div>
     </section>
